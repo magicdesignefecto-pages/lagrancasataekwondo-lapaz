@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>La Gran Casa Taekwondo | Disciplina y Carácter en La Paz</title>
+    <meta name="description" content="Formación real en Taekwondo para niños, jóvenes y adultos en La Paz. Guiados por Maestros 9no y 6to Dan. Agenda tu clase informativa hoy.">
+    <meta name="keywords" content="Taekwondo La Paz, Clases niños, Defensa personal adultos, Artes Marciales Bolivia, Villa San Antonio, Manuel Velásquez">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lagrancasatkd.com">
+    <meta property="og:title" content="La Gran Casa Taekwondo - Disciplina, Confianza y Carácter">
+    <meta property="og:description" content="Conoce el método antes de decidir. Clases para todas las edades con maestros de alto nivel.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/D32F2F/FFFFFF?text=La+Gran+Casa+Taekwondo">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        :root {
+            --primary-red: #D32F2F;
+            --dark-red: #b71c1c;
+            --white: #ffffff;
+            --off-white: #f9f9f9;
+            --text-dark: #1f2937;
+            --text-gray: #4b5563;
+            --shadow-3d: 0 20px 50px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden; /* Evita scroll horizontal no deseado */
+        }
+
+        a { text-decoration: none; }
+        ul { list-style: none; }
+
+        /* --- BOTONES GENERALES --- */
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.2);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-red);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-red);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(183, 28, 28, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary-red);
+            color: var(--primary-red);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-red);
+            color: var(--white);
+        }
+
+        /* --- HEADER --- */
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 15px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        .logo span { color: var(--text-dark); }
+        
+        .nav-cta { padding: 10px 25px; font-size: 0.8rem; }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding: 160px 5% 100px;
+            background: radial-gradient(circle at top center, #ffffff 0%, #f4f4f4 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.15;
+            margin-bottom: 25px;
+            color: var(--text-dark);
+            max-width: 950px;
+        }
+
+        .hero h1 span { color: var(--primary-red); }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 750px;
+            margin-bottom: 40px;
+        }
+
+        /* --- VALUE OFFER (ESTILO 3D FLOTANTE) --- */
+        .value-offer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 60px 40px;
+            margin: 0 5% 60px; /* Margen lateral y abajo */
+            border-radius: 20px;
+            
+            /* EFECTO SOMBRA 3D ELEGANTE */
+            box-shadow: var(--shadow-3d);
+            border: 1px solid rgba(0,0,0,0.02);
+            border-left: 8px solid var(--primary-red); /* Detalle de marca */
+            
+            position: relative;
+            transform: translateY(-30px); /* Sube un poco sobre el hero */
+            z-index: 10;
+        }
+
+        .value-offer h3 { 
+            font-size: 2rem; 
+            margin-bottom: 15px; 
+            color: var(--text-dark);
+        }
+        
+        .value-offer p { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            color: var(--text-gray); 
+            font-size: 1.1rem;
+        }
+
+        /* --- CORE BENEFITS (BOTONES 3D ESTÁTICOS) --- */
+        .core-benefits {
+            padding: 40px 5% 80px;
+            text-align: center;
+            background: var(--white);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+            font-weight: 800;
+        }
+
+        .core-benefits ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ESTILO BOTÓN 3D */
+        .core-benefits li {
+            background: #ffffff;
+            padding: 18px 30px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            
+            /* CONSTRUCCIÓN DEL EFECTO 3D */
+            border: 2px solid #f0f0f0;
+            border-bottom: 6px solid #e0e0e0; /* El "piso" del botón */
+            border-right: 2px solid #e0e0e0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .core-benefits li i { 
+            color: var(--white);
+            background: var(--primary-red);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            box-shadow: 0 3px 0 #8e1c1c; /* Mini sombra 3D dentro del icono */
+        }
+
+        .core-benefits li:hover {
+            transform: translateY(2px);
+            border-bottom: 4px solid #ccc; /* Se aplana un poco al hover */
+        }
+
+        /* --- SEGMENTED PROGRAMS --- */
+        .programs {
+            padding: 100px 5%;
+            background: var(--off-white);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-gray);
+            margin-bottom: 60px;
+            display: block;
+            margin-top: -40px;
+            font-size: 1.1rem;
+        }
+
+        .program-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .p-card {
+            flex: 1 1 320px;
+            background: var(--white);
+            padding: 50px 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: 0.3s;
+            border-top: 5px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .p-card:hover {
+            border-top: 5px solid var(--primary-red);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+        }
+
+        .p-card .target { 
+            font-size: 0.85rem; 
+            font-weight: 800; 
+            color: #ccc; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            margin-bottom: 15px; 
+            display: block; 
+        }
+
+        .p-card h3 { 
+            font-size: 1.5rem; 
+            margin-bottom: 15px; 
+            color: var(--primary-red); 
+        }
+        
+        .p-card ul { margin-top: 25px; text-align: left; }
+        .p-card li { 
+            margin-bottom: 12px; 
+            font-size: 0.95rem; 
+            color: var(--text-gray); 
+            display: flex; 
+            align-items: flex-start; 
+        }
+        .p-card li i { 
+            color: var(--primary-red); 
+            margin-right: 12px; 
+            margin-top: 5px; 
+            font-size: 0.8rem; 
+        }
+
+        /* --- AUTHORITY (MASTERS) --- */
+        .masters {
+            padding: 100px 5%;
+            text-align: center;
+            background: var(--white);
+        }
+        
+        .masters-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .master-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 450px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            transition: 0.3s;
+        }
+
+        .master-card:hover { border-color: var(--primary-red); }
+
+        .master-card h3 { font-size: 1.5rem; margin-bottom: 5px; }
+        .master-card .rank { 
+            color: var(--primary-red); 
+            font-weight: 800; 
+            font-size: 1.2rem; 
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* --- VIDEO SECTION --- */
+        .video-section {
+            background: #0a0a0a;
+            padding: 100px 5%;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .video-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .video-container {
+            width: 100%;
+            max-width: 300px; /* Tamaño tipo celular */
+            aspect-ratio: 9/16;
+            background: #1a1a1a;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #333;
+            transition: 0.3s;
+        }
+        
+        .video-container:hover { border-color: var(--primary-red); }
+
+        .vid-placeholder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #555;
+            padding: 20px;
+        }
+
+        /* --- FAQ SECTION --- */
+        .faq {
+            padding: 100px 5%;
+            background: var(--white);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        details {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            transition: 0.3s;
+        }
+        
+        summary:hover { color: var(--primary-red); }
+        summary::-webkit-details-marker { display: none; }
+        
+        summary:after {
+            content: "+";
+            font-size: 1.5rem;
+            color: var(--primary-red);
+            font-weight: 300;
+        }
+        
+        details[open] summary:after { content: "-"; }
+        
+        details p {
+            margin-top: 15px;
+            color: var(--text-gray);
+            font-size: 1rem;
+            padding-right: 30px;
+        }
+
+        /* --- FORMULARIO PERSONALIZADO (NUEVO) --- */
+        .custom-question-section {
+            background: #fafafa;
+            padding: 80px 5%;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .form-container {
+            max-width: 550px;
+            margin: 40px auto 0;
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 25px;
+            /* Sombra suave y elevada */
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            text-align: left;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-wrapper { position: relative; }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+            transition: 0.3s;
+        }
+
+        .input-wrapper input, 
+        .input-wrapper textarea {
+            width: 100%;
+            padding: 18px 18px 18px 50px; /* Espacio para icono */
+            border: 2px solid #eee;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s;
+            background: #fdfdfd;
+            color: var(--text-dark);
+        }
+
+        /* Efecto Focus en Inputs */
+        .input-wrapper input:focus,
+        .input-wrapper textarea:focus {
+            border-color: var(--primary-red);
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(211, 47, 47, 0.1);
+        }
+        
+        .input-wrapper input:focus + i,
+        .input-wrapper textarea:focus + i { /* No funciona con selector hermano adyacente si el icono está antes, corregido abajo con JS o CSS simple */ } 
+        
+        .input-wrapper:focus-within i {
+            color: var(--primary-red);
+        }
+
+        .btn-submit {
+            width: 100%;
+            margin-top: 10px;
+            padding: 18px;
+            font-size: 1rem;
+        }
+
+        /* --- FINAL CTA & FOOTER --- */
+        .final-cta {
+            background: var(--white);
+            padding: 100px 5%;
+            text-align: center;
+        }
+        
+        .footer {
+            background: #111;
+            color: #888;
+            padding: 60px 5%;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 5px solid var(--primary-red);
+        }
+        .footer h4 { color: var(--white); font-size: 1.4rem; margin-bottom: 15px; text-transform: uppercase; }
+        
+        .footer-socials a {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .footer-socials a:hover { color: var(--primary-red); }
+
+        /* --- WHATSAPP FLOAT --- */
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); background-color: #1ebe57; }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-cta { display: none; }
+            .value-offer { padding: 40px 20px; margin: 0 20px 40px; }
+            .section-title { font-size: 2rem; }
+            .form-container { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">La Gran Casa <span>Taekwondo</span></div>
+        <a href="https://wa.me/59162404811?text=Hola,%20me%20gustaría%20agendar%20una%20clase%20informativa" class="btn btn-primary nav-cta">
+            <i class="fab fa-whatsapp"></i> Agendar Clase
+        </a>
+    </header>
+
+    <section class="hero">
+        <h1>Disciplina, confianza y carácter que se construyen <br><span>desde el primer mes</span></h1>
+        <p>Formación real en Taekwondo para niños, jóvenes y adultos en La Paz, guiados por maestros de alto nivel y un método seguro y progresivo.</p>
+        
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+            <a href="https://wa.me/59162404811?text=Hola,%20quisiera%20agendar%20mi%20clase%20informativa" class="btn btn-primary">
+                Agenda tu clase informativa
+            </a>
+        </div>
+    </section>
+
+    <div class="value-offer">
+        <h3>Conoce el método antes de decidir</h3>
+        <p>Accede a una clase informativa o evaluación inicial sin compromiso. Descubre el ambiente, la metodología y el enfoque real de entrenamiento antes de inscribirte.</p>
+    </div>
+
+    <section class="core-benefits">
+        <h2 class="section-title">¿Qué lograrás con nosotros?</h2>
+        <ul>
+            <li><i class="fas fa-check"></i> Mayor disciplina</li>
+            <li><i class="fas fa-dumbbell"></i> Condición física sólida</li>
+            <li><i class="fas fa-shield-alt"></i> Defensa personal real</li>
+            <li><i class="fas fa-user-shield"></i> Seguridad y confianza</li>
+            <li><i class="fas fa-brain"></i> Fortaleza mental</li>
+        </ul>
+    </section>
+
+    <section class="programs">
+        <h2 class="section-title" style="text-align: center;">Programas Especializados</h2>
+        <span class="section-subtitle">Elige el camino adecuado para ti o tu familia</span>
+        
+        <div class="program-cards">
+            <div class="p-card">
+                <span class="target">Para Padres</span>
+                <h3>Formación Infantil</h3>
+                <p>Buscas protección, futuro y seguridad para tus hijos.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Entrenamiento seguro y supervisado</li>
+                    <li><i class="fas fa-check-circle"></i> Formación en valores y respeto</li>
+                    <li><i class="fas fa-check-circle"></i> Avances visibles desde el 1er mes</li>
+                    <li><i class="fas fa-check-circle"></i> Profesores certificados</li>
+                </ul>
+            </div>
+
+            <div class="p-card">
+                <span class="target">Para Jóvenes</span>
+                <h3>Carácter y Superación</h3>
+                <p>Para quienes buscan identidad, pertenencia y superación.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Disciplina real y constancia</li>
+                    <li><i class="fas fa-check-circle"></i> Autocontrol y energía positiva</li>
+                    <li><i class="fas fa-check-circle"></i> Entrenamiento exigente progresivo</li>
+                    <li><i class="fas fa-check-circle"></i> Confianza física y mental</li>
+                </ul>
+            </div>
+
+            <div class="p-card">
+                <span class="target">Para Adultos</span>
+                <h3>Adultos (Desde cero)</h3>
+                <p>Rompe miedos, mejora tu bienestar y supérate a ti mismo.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> No se requiere experiencia previa</li>
+                    <li><i class="fas fa-check-circle"></i> Reducción de estrés y mejor salud</li>
+                    <li><i class="fas fa-check-circle"></i> Entrenamiento a tu propio ritmo</li>
+                    <li><i class="fas fa-check-circle"></i> Seguridad personal real</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="masters">
+        <h2 class="section-title">Maestros de Alto Nivel</h2>
+        <p style="color:var(--text-gray); margin-bottom: 20px;">La experiencia garantiza técnica correcta y disciplina auténtica.</p>
+        
+        <div class="masters-grid">
+            <div class="master-card">
+                <h3>Manuel Velásquez</h3>
+                <span class="rank">9no Dan</span>
+                <p>Maestro Instructor Principal. Décadas de trayectoria formando cinturones negros y personas de bien.</p>
+            </div>
+            <div class="master-card">
+                <h3>Dax Velásquez</h3>
+                <span class="rank">6to Dan</span>
+                <p>Maestro Instructor. Enfoque en metodología moderna y seguimiento personalizado del alumno.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Mira cómo entrenamos</h2>
+        <p style="margin-bottom:40px; color:#aaa;">Resultados reales dentro y fuera del tatami.</p>
+
+        <div class="video-grid">
+            <div class="video-container">
+                <div class="vid-placeholder">
+                    <i class="fab fa-tiktok" style="font-size:3rem; margin-bottom:10px;"></i>
+                    <p>Insertar Embed TikTok</p>
+                </div>
+            </div>
+             <div class="video-container">
+                <div class="vid-placeholder">
+                    <i class="fab fa-tiktok" style="font-size:3rem; margin-bottom:10px;"></i>
+                    <p>Insertar Embed TikTok</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="https://www.tiktok.com/@lagrancasataekwondo?_r=1&_t=ZM-92pAhxelumZ" target="_blank" class="btn btn-outline" style="border-color:#fff; color:#fff; margin-top:30px;">
+            Ver TikTok Oficial
+        </a>
+    </section>
+
+    <section class="faq">
+        <h2 class="section-title" style="text-align: center;">Preguntas Frecuentes</h2>
+        
+        <details>
+            <summary>¿Necesito experiencia previa?</summary>
+            <p>No. El programa está diseñado específicamente para comenzar desde cero y avanzar de forma progresiva, sin importar tu edad.</p>
+        </details>
+
+        <details>
+            <summary>¿Es seguro para niños?</summary>
+            <p>Sí, absolutamente. El entrenamiento es supervisado todo el tiempo y la metodología está adaptada a la edad y capacidad física del niño para evitar lesiones.</p>
+        </details>
+
+        <details>
+            <summary>¿Puedo empezar siendo adulto?</summary>
+            <p>Sí. Tenemos un grupo específico para adultos. Muchos comienzan sin experiencia buscando salud y defensa personal, avanzando a su propio ritmo.</p>
+        </details>
+    </section>
+
+    <section class="custom-question-section">
+        <h2 class="section-title" style="font-size: 2rem;">¿Tienes una duda específica?</h2>
+        <span class="section-subtitle">Déjanos tu consulta y te responderemos directo a tu WhatsApp.</span>
+
+        <div class="form-container">
+            <form id="whatsappForm" onsubmit="enviarWhatsApp(event)">
+                
+                <div class="input-group">
+                    <label>Tu Nombre</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="frmName" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Tu Número de WhatsApp</label>
+                    <div class="input-wrapper">
+                        <i class="fab fa-whatsapp"></i>
+                        <input type="tel" id="frmPhone" placeholder="Ej. 70012345" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Tu Pregunta</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-comment-dots" style="top: 20px; transform: none;"></i>
+                        <textarea id="frmMessage" rows="3" placeholder="Quisiera saber los horarios para..." required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                    Enviar Pregunta <i class="fas fa-paper-plane" style="margin-left:8px;"></i>
+                </button>
+            </form>
+            <p style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 15px;">
+                <i class="fas fa-lock"></i> Tus datos solo se usan para responderte.
+            </p>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <h2 style="font-size:2rem; margin-bottom:15px; color: var(--text-dark);">Da el primer paso hoy</h2>
+        <p style="margin-bottom:30px; max-width:600px; margin-left:auto; margin-right:auto; color: var(--text-gray);">El primer paso no es comprometerte, es informarte. Escríbenos y conoce si La Gran Casa es para ti o para tu hijo.</p>
+        <a href="https://wa.me/59162404811?text=Hola,%20quiero%20dar%20el%20primer%20paso%20y%20conocer%20más" class="btn btn-primary">
+            Escribir por WhatsApp ahora
+        </a>
+    </section>
+
+    <footer class="footer">
+        <h4>La Gran Casa Taekwondo</h4>
+        <p>Cruce de Villa San Antonio, Av. Esteban Arce #1872, subsuelo.<br>La Paz, Bolivia</p>
+        <br>
+        <div class="footer-socials" style="margin-bottom: 20px;">
+            <a href="https://www.facebook.com/lagrancasalapaz" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@lagrancasataekwondo?_r=1&_t=ZM-92pAhxelumZ" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/59162404811" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p style="font-size: 0.8rem;">&copy; 2026 La Gran Casa Taekwondo. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/59162404811?text=Hola,%20quisiera%20más%20información" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function enviarWhatsApp(e) {
+            e.preventDefault(); // Evita que la página se recargue
+
+            // 1. Capturar los valores
+            let nombre = document.getElementById('frmName').value;
+            let telefonoUsuario = document.getElementById('frmPhone').value;
+            let pregunta = document.getElementById('frmMessage').value;
+
+            // 2. Número de la escuela (DESTINO)
+            let numeroEscuela = "59162404811"; 
+
+            // 3. Crear el mensaje formateado
+            let texto = `*Hola La Gran Casa, tengo una consulta:*%0A%0A` +
+                        `👤 *Nombre:* ${nombre}%0A` +
+                        `📱 *Mi Tel:* ${telefonoUsuario}%0A` +
+                        `❓ *Pregunta:* ${pregunta}`;
+
+            // 4. Crear la URL y abrirla
+            let url = `https://wa.me/${numeroEscuela}?text=${texto}`;
+            window.open(url, '_blank');
+            
+            // Opcional: Limpiar el formulario para UX
+            document.getElementById('whatsappForm').reset();
+        }
+    </script>
+
+</body>
+</html>
