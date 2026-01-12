@@ -1,796 +1,678 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-BO">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>La Gran Casa Taekwondo | Disciplina y Carácter en La Paz</title>
-    <meta name="description" content="Formación real en Taekwondo para niños, jóvenes y adultos en La Paz. Guiados por Maestros 9no y 6to Dan. Agenda tu clase informativa hoy.">
-    <meta name="keywords" content="Taekwondo La Paz, Clases niños, Defensa personal adultos, Artes Marciales Bolivia, Villa San Antonio, Manuel Velásquez">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lagrancasatkd.com">
-    <meta property="og:title" content="La Gran Casa Taekwondo - Disciplina, Confianza y Carácter">
-    <meta property="og:description" content="Conoce el método antes de decidir. Clases para todas las edades con maestros de alto nivel.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/D32F2F/FFFFFF?text=La+Gran+Casa+Taekwondo">
+    <title>Escuela de Taekwondo en La Paz | La Gran Casa Taekwondo</title>
+    <meta name="description"
+        content="Escuela profesional de Taekwondo en La Paz. Disciplina, carácter y formación real. Clases para niños y adultos.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/d8bdeadb98f26543205eaa7a958e6ca14895b1d0/LOGO%20LA%20GRAN%20CASA%20ALTA%20IMAGEN%20SVG.svg"
+        type="image/svg+xml">
 
-    <style>
-        /* --- ESTILOS GENERALES --- */
-        :root {
-            --primary-red: #D32F2F;
-            --dark-red: #b71c1c;
-            --white: #ffffff;
-            --off-white: #f9f9f9;
-            --text-dark: #1f2937;
-            --text-gray: #4b5563;
-            --shadow-3d: 0 20px 50px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.05);
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--white);
-            line-height: 1.6;
-            overflow-x: hidden; /* Evita scroll horizontal no deseado */
-        }
-
-        a { text-decoration: none; }
-        ul { list-style: none; }
-
-        /* --- BOTONES GENERALES --- */
-        .btn {
-            display: inline-block;
-            padding: 15px 35px;
-            border-radius: 50px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.2);
-            border: none;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-red);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--dark-red);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(183, 28, 28, 0.4);
-        }
-
-        .btn-outline {
-            border: 2px solid var(--primary-red);
-            color: var(--primary-red);
-            background: transparent;
-        }
-
-        .btn-outline:hover {
-            background: var(--primary-red);
-            color: var(--white);
-        }
-
-        /* --- HEADER --- */
-        header {
-            background: rgba(255, 255, 255, 0.98);
-            padding: 15px 5%;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--primary-red);
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-        }
-        .logo span { color: var(--text-dark); }
-        
-        .nav-cta { padding: 10px 25px; font-size: 0.8rem; }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            padding: 160px 5% 100px;
-            background: radial-gradient(circle at top center, #ffffff 0%, #f4f4f4 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            line-height: 1.15;
-            margin-bottom: 25px;
-            color: var(--text-dark);
-            max-width: 950px;
-        }
-
-        .hero h1 span { color: var(--primary-red); }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--text-gray);
-            max-width: 750px;
-            margin-bottom: 40px;
-        }
-
-        /* --- VALUE OFFER (ESTILO 3D FLOTANTE) --- */
-        .value-offer {
-            background-color: #ffffff;
-            text-align: center;
-            padding: 60px 40px;
-            margin: 0 5% 60px; /* Margen lateral y abajo */
-            border-radius: 20px;
-            
-            /* EFECTO SOMBRA 3D ELEGANTE */
-            box-shadow: var(--shadow-3d);
-            border: 1px solid rgba(0,0,0,0.02);
-            border-left: 8px solid var(--primary-red); /* Detalle de marca */
-            
-            position: relative;
-            transform: translateY(-30px); /* Sube un poco sobre el hero */
-            z-index: 10;
-        }
-
-        .value-offer h3 { 
-            font-size: 2rem; 
-            margin-bottom: 15px; 
-            color: var(--text-dark);
-        }
-        
-        .value-offer p { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            color: var(--text-gray); 
-            font-size: 1.1rem;
-        }
-
-        /* --- CORE BENEFITS (BOTONES 3D ESTÁTICOS) --- */
-        .core-benefits {
-            padding: 40px 5% 80px;
-            text-align: center;
-            background: var(--white);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: var(--text-dark);
-            font-weight: 800;
-        }
-
-        .core-benefits ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        /* ESTILO BOTÓN 3D */
-        .core-benefits li {
-            background: #ffffff;
-            padding: 18px 30px;
-            border-radius: 12px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: var(--text-dark);
-            
-            /* CONSTRUCCIÓN DEL EFECTO 3D */
-            border: 2px solid #f0f0f0;
-            border-bottom: 6px solid #e0e0e0; /* El "piso" del botón */
-            border-right: 2px solid #e0e0e0;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: all 0.2s ease;
-        }
-
-        .core-benefits li i { 
-            color: var(--white);
-            background: var(--primary-red);
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            font-size: 0.9rem;
-            box-shadow: 0 3px 0 #8e1c1c; /* Mini sombra 3D dentro del icono */
-        }
-
-        .core-benefits li:hover {
-            transform: translateY(2px);
-            border-bottom: 4px solid #ccc; /* Se aplana un poco al hover */
-        }
-
-        /* --- SEGMENTED PROGRAMS --- */
-        .programs {
-            padding: 100px 5%;
-            background: var(--off-white);
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-gray);
-            margin-bottom: 60px;
-            display: block;
-            margin-top: -40px;
-            font-size: 1.1rem;
-        }
-
-        .program-cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .p-card {
-            flex: 1 1 320px;
-            background: var(--white);
-            padding: 50px 35px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            transition: 0.3s;
-            border-top: 5px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .p-card:hover {
-            border-top: 5px solid var(--primary-red);
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-        }
-
-        .p-card .target { 
-            font-size: 0.85rem; 
-            font-weight: 800; 
-            color: #ccc; 
-            text-transform: uppercase; 
-            letter-spacing: 2px;
-            margin-bottom: 15px; 
-            display: block; 
-        }
-
-        .p-card h3 { 
-            font-size: 1.5rem; 
-            margin-bottom: 15px; 
-            color: var(--primary-red); 
-        }
-        
-        .p-card ul { margin-top: 25px; text-align: left; }
-        .p-card li { 
-            margin-bottom: 12px; 
-            font-size: 0.95rem; 
-            color: var(--text-gray); 
-            display: flex; 
-            align-items: flex-start; 
-        }
-        .p-card li i { 
-            color: var(--primary-red); 
-            margin-right: 12px; 
-            margin-top: 5px; 
-            font-size: 0.8rem; 
-        }
-
-        /* --- AUTHORITY (MASTERS) --- */
-        .masters {
-            padding: 100px 5%;
-            text-align: center;
-            background: var(--white);
-        }
-        
-        .masters-grid {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 50px;
-        }
-        
-        .master-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 450px;
-            border: 1px solid #f0f0f0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            transition: 0.3s;
-        }
-
-        .master-card:hover { border-color: var(--primary-red); }
-
-        .master-card h3 { font-size: 1.5rem; margin-bottom: 5px; }
-        .master-card .rank { 
-            color: var(--primary-red); 
-            font-weight: 800; 
-            font-size: 1.2rem; 
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        /* --- VIDEO SECTION --- */
-        .video-section {
-            background: #0a0a0a;
-            padding: 100px 5%;
-            text-align: center;
-            color: var(--white);
-        }
-        
-        .video-grid {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 50px;
-        }
-        
-        .video-container {
-            width: 100%;
-            max-width: 300px; /* Tamaño tipo celular */
-            aspect-ratio: 9/16;
-            background: #1a1a1a;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            border: 2px solid #333;
-            transition: 0.3s;
-        }
-        
-        .video-container:hover { border-color: var(--primary-red); }
-
-        .vid-placeholder {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            color: #555;
-            padding: 20px;
-        }
-
-        /* --- FAQ SECTION --- */
-        .faq {
-            padding: 100px 5%;
-            background: var(--white);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        details {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        
-        summary {
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1.2rem;
-            color: var(--text-dark);
-            transition: 0.3s;
-        }
-        
-        summary:hover { color: var(--primary-red); }
-        summary::-webkit-details-marker { display: none; }
-        
-        summary:after {
-            content: "+";
-            font-size: 1.5rem;
-            color: var(--primary-red);
-            font-weight: 300;
-        }
-        
-        details[open] summary:after { content: "-"; }
-        
-        details p {
-            margin-top: 15px;
-            color: var(--text-gray);
-            font-size: 1rem;
-            padding-right: 30px;
-        }
-
-        /* --- FORMULARIO PERSONALIZADO (NUEVO) --- */
-        .custom-question-section {
-            background: #fafafa;
-            padding: 80px 5%;
-            text-align: center;
-            border-top: 1px solid #eee;
-        }
-
-        .form-container {
-            max-width: 550px;
-            margin: 40px auto 0;
-            background: #fff;
-            padding: 50px 40px;
-            border-radius: 25px;
-            /* Sombra suave y elevada */
-            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-            text-align: left;
-            border: 1px solid rgba(0,0,0,0.02);
-        }
-
-        .input-group {
-            margin-bottom: 25px;
-        }
-
-        .input-group label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            color: var(--text-dark);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .input-wrapper { position: relative; }
-
-        .input-wrapper i {
-            position: absolute;
-            left: 18px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #ccc;
-            transition: 0.3s;
-        }
-
-        .input-wrapper input, 
-        .input-wrapper textarea {
-            width: 100%;
-            padding: 18px 18px 18px 50px; /* Espacio para icono */
-            border: 2px solid #eee;
-            border-radius: 12px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            outline: none;
-            transition: 0.3s;
-            background: #fdfdfd;
-            color: var(--text-dark);
-        }
-
-        /* Efecto Focus en Inputs */
-        .input-wrapper input:focus,
-        .input-wrapper textarea:focus {
-            border-color: var(--primary-red);
-            background: #fff;
-            box-shadow: 0 5px 15px rgba(211, 47, 47, 0.1);
-        }
-        
-        .input-wrapper input:focus + i,
-        .input-wrapper textarea:focus + i { /* No funciona con selector hermano adyacente si el icono está antes, corregido abajo con JS o CSS simple */ } 
-        
-        .input-wrapper:focus-within i {
-            color: var(--primary-red);
-        }
-
-        .btn-submit {
-            width: 100%;
-            margin-top: 10px;
-            padding: 18px;
-            font-size: 1rem;
-        }
-
-        /* --- FINAL CTA & FOOTER --- */
-        .final-cta {
-            background: var(--white);
-            padding: 100px 5%;
-            text-align: center;
-        }
-        
-        .footer {
-            background: #111;
-            color: #888;
-            padding: 60px 5%;
-            text-align: center;
-            font-size: 0.9rem;
-            border-top: 5px solid var(--primary-red);
-        }
-        .footer h4 { color: var(--white); font-size: 1.4rem; margin-bottom: 15px; text-transform: uppercase; }
-        
-        .footer-socials a {
-            color: var(--white);
-            font-size: 1.5rem;
-            margin: 0 15px;
-            transition: 0.3s;
-        }
-        .footer-socials a:hover { color: var(--primary-red); }
-
-        /* --- WHATSAPP FLOAT --- */
-        .whatsapp-float {
-            position: fixed;
-            width: 65px;
-            height: 65px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 32px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-            animation: pulse 2s infinite;
-        }
-        .whatsapp-float:hover { transform: scale(1.1); background-color: #1ebe57; }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-
-        /* --- RESPONSIVE --- */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .nav-cta { display: none; }
-            .value-offer { padding: 40px 20px; margin: 0 20px 40px; }
-            .section-title { font-size: 2rem; }
-            .form-container { padding: 30px 20px; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="logo">La Gran Casa <span>Taekwondo</span></div>
-        <a href="https://wa.me/59162404811?text=Hola,%20me%20gustaría%20agendar%20una%20clase%20informativa" class="btn btn-primary nav-cta">
-            <i class="fab fa-whatsapp"></i> Agendar Clase
-        </a>
-    </header>
-
-    <section class="hero">
-        <h1>Disciplina, confianza y carácter que se construyen <br><span>desde el primer mes</span></h1>
-        <p>Formación real en Taekwondo para niños, jóvenes y adultos en La Paz, guiados por maestros de alto nivel y un método seguro y progresivo.</p>
-        
-        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
-            <a href="https://wa.me/59162404811?text=Hola,%20quisiera%20agendar%20mi%20clase%20informativa" class="btn btn-primary">
-                Agenda tu clase informativa
-            </a>
-        </div>
-    </section>
-
-    <div class="value-offer">
-        <h3>Conoce el método antes de decidir</h3>
-        <p>Accede a una clase informativa o evaluación inicial sin compromiso. Descubre el ambiente, la metodología y el enfoque real de entrenamiento antes de inscribirte.</p>
-    </div>
-
-    <section class="core-benefits">
-        <h2 class="section-title">¿Qué lograrás con nosotros?</h2>
-        <ul>
-            <li><i class="fas fa-check"></i> Mayor disciplina</li>
-            <li><i class="fas fa-dumbbell"></i> Condición física sólida</li>
-            <li><i class="fas fa-shield-alt"></i> Defensa personal real</li>
-            <li><i class="fas fa-user-shield"></i> Seguridad y confianza</li>
-            <li><i class="fas fa-brain"></i> Fortaleza mental</li>
-        </ul>
-    </section>
-
-    <section class="programs">
-        <h2 class="section-title" style="text-align: center;">Programas Especializados</h2>
-        <span class="section-subtitle">Elige el camino adecuado para ti o tu familia</span>
-        
-        <div class="program-cards">
-            <div class="p-card">
-                <span class="target">Para Padres</span>
-                <h3>Formación Infantil</h3>
-                <p>Buscas protección, futuro y seguridad para tus hijos.</p>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Entrenamiento seguro y supervisado</li>
-                    <li><i class="fas fa-check-circle"></i> Formación en valores y respeto</li>
-                    <li><i class="fas fa-check-circle"></i> Avances visibles desde el 1er mes</li>
-                    <li><i class="fas fa-check-circle"></i> Profesores certificados</li>
-                </ul>
-            </div>
-
-            <div class="p-card">
-                <span class="target">Para Jóvenes</span>
-                <h3>Carácter y Superación</h3>
-                <p>Para quienes buscan identidad, pertenencia y superación.</p>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Disciplina real y constancia</li>
-                    <li><i class="fas fa-check-circle"></i> Autocontrol y energía positiva</li>
-                    <li><i class="fas fa-check-circle"></i> Entrenamiento exigente progresivo</li>
-                    <li><i class="fas fa-check-circle"></i> Confianza física y mental</li>
-                </ul>
-            </div>
-
-            <div class="p-card">
-                <span class="target">Para Adultos</span>
-                <h3>Adultos (Desde cero)</h3>
-                <p>Rompe miedos, mejora tu bienestar y supérate a ti mismo.</p>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> No se requiere experiencia previa</li>
-                    <li><i class="fas fa-check-circle"></i> Reducción de estrés y mejor salud</li>
-                    <li><i class="fas fa-check-circle"></i> Entrenamiento a tu propio ritmo</li>
-                    <li><i class="fas fa-check-circle"></i> Seguridad personal real</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="masters">
-        <h2 class="section-title">Maestros de Alto Nivel</h2>
-        <p style="color:var(--text-gray); margin-bottom: 20px;">La experiencia garantiza técnica correcta y disciplina auténtica.</p>
-        
-        <div class="masters-grid">
-            <div class="master-card">
-                <h3>Manuel Velásquez</h3>
-                <span class="rank">9no Dan</span>
-                <p>Maestro Instructor Principal. Décadas de trayectoria formando cinturones negros y personas de bien.</p>
-            </div>
-            <div class="master-card">
-                <h3>Dax Velásquez</h3>
-                <span class="rank">6to Dan</span>
-                <p>Maestro Instructor. Enfoque en metodología moderna y seguimiento personalizado del alumno.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="video-section">
-        <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Mira cómo entrenamos</h2>
-        <p style="margin-bottom:40px; color:#aaa;">Resultados reales dentro y fuera del tatami.</p>
-
-        <div class="video-grid">
-            <div class="video-container">
-                <div class="vid-placeholder">
-                    <i class="fab fa-tiktok" style="font-size:3rem; margin-bottom:10px;"></i>
-                    <p>Insertar Embed TikTok</p>
-                </div>
-            </div>
-             <div class="video-container">
-                <div class="vid-placeholder">
-                    <i class="fab fa-tiktok" style="font-size:3rem; margin-bottom:10px;"></i>
-                    <p>Insertar Embed TikTok</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <a href="https://www.tiktok.com/@lagrancasataekwondo?_r=1&_t=ZM-92pAhxelumZ" target="_blank" class="btn btn-outline" style="border-color:#fff; color:#fff; margin-top:30px;">
-            Ver TikTok Oficial
-        </a>
-    </section>
-
-    <section class="faq">
-        <h2 class="section-title" style="text-align: center;">Preguntas Frecuentes</h2>
-        
-        <details>
-            <summary>¿Necesito experiencia previa?</summary>
-            <p>No. El programa está diseñado específicamente para comenzar desde cero y avanzar de forma progresiva, sin importar tu edad.</p>
-        </details>
-
-        <details>
-            <summary>¿Es seguro para niños?</summary>
-            <p>Sí, absolutamente. El entrenamiento es supervisado todo el tiempo y la metodología está adaptada a la edad y capacidad física del niño para evitar lesiones.</p>
-        </details>
-
-        <details>
-            <summary>¿Puedo empezar siendo adulto?</summary>
-            <p>Sí. Tenemos un grupo específico para adultos. Muchos comienzan sin experiencia buscando salud y defensa personal, avanzando a su propio ritmo.</p>
-        </details>
-    </section>
-
-    <section class="custom-question-section">
-        <h2 class="section-title" style="font-size: 2rem;">¿Tienes una duda específica?</h2>
-        <span class="section-subtitle">Déjanos tu consulta y te responderemos directo a tu WhatsApp.</span>
-
-        <div class="form-container">
-            <form id="whatsappForm" onsubmit="enviarWhatsApp(event)">
-                
-                <div class="input-group">
-                    <label>Tu Nombre</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-user"></i>
-                        <input type="text" id="frmName" placeholder="Ej. Juan Pérez" required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label>Tu Número de WhatsApp</label>
-                    <div class="input-wrapper">
-                        <i class="fab fa-whatsapp"></i>
-                        <input type="tel" id="frmPhone" placeholder="Ej. 70012345" required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label>Tu Pregunta</label>
-                    <div class="input-wrapper">
-                        <i class="fas fa-comment-dots" style="top: 20px; transform: none;"></i>
-                        <textarea id="frmMessage" rows="3" placeholder="Quisiera saber los horarios para..." required></textarea>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-submit">
-                    Enviar Pregunta <i class="fas fa-paper-plane" style="margin-left:8px;"></i>
-                </button>
-            </form>
-            <p style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 15px;">
-                <i class="fas fa-lock"></i> Tus datos solo se usan para responderte.
-            </p>
-        </div>
-    </section>
-
-    <section class="final-cta">
-        <h2 style="font-size:2rem; margin-bottom:15px; color: var(--text-dark);">Da el primer paso hoy</h2>
-        <p style="margin-bottom:30px; max-width:600px; margin-left:auto; margin-right:auto; color: var(--text-gray);">El primer paso no es comprometerte, es informarte. Escríbenos y conoce si La Gran Casa es para ti o para tu hijo.</p>
-        <a href="https://wa.me/59162404811?text=Hola,%20quiero%20dar%20el%20primer%20paso%20y%20conocer%20más" class="btn btn-primary">
-            Escribir por WhatsApp ahora
-        </a>
-    </section>
-
-    <footer class="footer">
-        <h4>La Gran Casa Taekwondo</h4>
-        <p>Cruce de Villa San Antonio, Av. Esteban Arce #1872, subsuelo.<br>La Paz, Bolivia</p>
-        <br>
-        <div class="footer-socials" style="margin-bottom: 20px;">
-            <a href="https://www.facebook.com/lagrancasalapaz" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.tiktok.com/@lagrancasataekwondo?_r=1&_t=ZM-92pAhxelumZ" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://wa.me/59162404811" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <p style="font-size: 0.8rem;">&copy; 2026 La Gran Casa Taekwondo. Todos los derechos reservados.</p>
-    </footer>
-
-    <a href="https://wa.me/59162404811?text=Hola,%20quisiera%20más%20información" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        function enviarWhatsApp(e) {
-            e.preventDefault(); // Evita que la página se recargue
-
-            // 1. Capturar los valores
-            let nombre = document.getElementById('frmName').value;
-            let telefonoUsuario = document.getElementById('frmPhone').value;
-            let pregunta = document.getElementById('frmMessage').value;
-
-            // 2. Número de la escuela (DESTINO)
-            let numeroEscuela = "59162404811"; 
-
-            // 3. Crear el mensaje formateado
-            let texto = `*Hola La Gran Casa, tengo una consulta:*%0A%0A` +
-                        `👤 *Nombre:* ${nombre}%0A` +
-                        `📱 *Mi Tel:* ${telefonoUsuario}%0A` +
-                        `❓ *Pregunta:* ${pregunta}`;
-
-            // 4. Crear la URL y abrirla
-            let url = `https://wa.me/${numeroEscuela}?text=${texto}`;
-            window.open(url, '_blank');
-            
-            // Opcional: Limpiar el formulario para UX
-            document.getElementById('whatsappForm').reset();
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tkd: { red: '#C00000', black: '#1A1A1A', gray: '#F5F5F5' }
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
         }
     </script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "La Gran Casa Taekwondo",
+      "image": "https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/d8bdeadb98f26543205eaa7a958e6ca14895b1d0/LOGO%20LA%20GRAN%20CASA%20ALTA%20IMAGEN%20SVG.svg",
+      "telephone": "+59162404811",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cruce de Villa San Antonio, Av. Esteban Arce #1872",
+        "addressLocality": "La Paz",
+        "addressCountry": "BO"
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-white text-tkd-black antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2" aria-label="Inicio">
+                <img src="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/d8bdeadb98f26543205eaa7a958e6ca14895b1d0/LOGO%20LA%20GRAN%20CASA%20ALTA%20IMAGEN%20SVG.svg"
+                    alt="Logo La Gran Casa" class="h-12 w-auto">
+            </a>
+            <div class="hidden md:flex gap-6 items-center">
+                <a href="#beneficios" class="font-semibold hover:text-tkd-red transition">Beneficios</a>
+                <a href="#programas" class="font-semibold hover:text-tkd-red transition">Programas</a>
+                <a href="#ubicacion" class="font-semibold hover:text-tkd-red transition">Ubicación</a>
+                <a href="https://wa.me/59162404811" class="btn-primary">
+                    <i class="fab fa-whatsapp text-lg"></i> Inscríbete Hoy
+                </a>
+            </div>
+            <button class="md:hidden text-2xl text-tkd-black" id="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-lg" id="mobile-menu">
+            <div class="flex flex-col gap-4">
+                <a href="#beneficios" class="block font-semibold">Beneficios</a>
+                <a href="#programas" class="block font-semibold">Programas</a>
+                <a href="#ubicacion" class="block font-semibold">Ubicación</a>
+                <a href="https://wa.me/59162404811" class="btn-primary text-center justify-center">Inscríbete Hoy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="hero-bg pt-32 pb-20 px-4 text-center relative overflow-hidden">
+            <div class="max-w-4xl mx-auto relative z-10 fade-in-up">
+                <span class="badge-hero">Escuela de Taekwondo Tradicional en La Paz, Bolivia</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-tkd-black mb-6 leading-tight tracking-tight">
+                    Disciplina.<br>
+                    <span class="text-tkd-red">Carácter.</span><br>
+                    Confianza.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Una de las escuelas con mayor trayectoria en La Paz, Bolivia. Formación auténtica de Taekwondo
+                    tradicional para niños, jóvenes y adultos.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="https://wa.me/59162404811" class="btn-primary text-lg px-8 py-4 justify-center">
+                        Solicitar Información
+                    </a>
+                    <a href="#ubicacion" class="btn-secondary text-lg px-8 py-4 justify-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Ver Ubicación
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-24 bg-gradient-to-b from-zinc-950 to-tkd-black relative overflow-hidden">
+            <!-- Elementos decorativos de fondo -->
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-tkd-red/5 rounded-full blur-3xl">
+            </div>
+
+            <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+                <!-- Badge minimalista con efecto LED -->
+                <div
+                    class="led-glow-badge inline-flex items-center gap-2 border border-tkd-red/30 text-white text-xs font-bold uppercase tracking-widest px-5 py-2.5 rounded-full mb-8 backdrop-blur-sm">
+                    <span class="w-2 h-2 bg-tkd-red rounded-full animate-pulse"></span>
+                    Trayectoria y Excelencia
+                </div>
+
+                <!-- Título principal con gradiente -->
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                    Una de las Escuelas con Mayor<br>
+                    <span
+                        class="bg-gradient-to-r from-tkd-red to-red-500 bg-clip-text text-transparent">Trayectoria</span>
+                    en La Paz
+                </h2>
+                <p class="text-gray-400 text-base md:text-lg mb-16 max-w-3xl mx-auto leading-relaxed">
+                    Miembros activos y certificados por la <a
+                        href="https://www.facebook.com/boliviataekwondo/?locale=es_LA" target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold text-white hover:text-tkd-red transition-colors">Federación
+                        Boliviana de Taekwondo</a> y miembros activos de la <a href="https://www.tkdgttf.com/"
+                        target="_blank" rel="noopener noreferrer"
+                        class="font-bold text-white hover:text-tkd-red transition-colors">Global
+                        Taekwondo Traditional Federation (GTTF)</a>
+                </p>
+
+                <!-- Logos - Diseño minimalista sin contenedores -->
+                <div class="flex justify-center items-center gap-10 md:gap-16 lg:gap-20 mb-20 flex-wrap">
+                    <!-- Global Federation (Izquierda - Jerarquía) -->
+                    <img src="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/7c9e136bcaaa623854a66d0fe7d5dc464d45ba74/LOGO%20TAEKWONDO%20FEDERATION%20ALTA%20IMAGEN%20SVG.svg"
+                        alt="Global Taekwondo Federation"
+                        class="h-24 md:h-32 lg:h-36 object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+
+                    <!-- La Gran Casa Principal (Centro - Elemento destacado) -->
+                    <img src="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/d8bdeadb98f26543205eaa7a958e6ca14895b1d0/LOGO%20LA%20GRAN%20CASA%20ALTA%20IMAGEN%20SVG.svg"
+                        alt="La Gran Casa Taekwondo"
+                        class="h-28 md:h-36 lg:h-44 object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+
+                    <!-- La Cumbre Kwan (Derecha) -->
+                    <img src="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/7c9e136bcaaa623854a66d0fe7d5dc464d45ba74/logo%20la%20cumbre%20kwan%20calidad%20alta%20svg.svg"
+                        alt="La Cumbre Kwan"
+                        class="h-24 md:h-32 lg:h-36 object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+
+                    <!-- Logo Secundario La Gran Casa (Derecha) -->
+                    <img src="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/d8bdeadb98f26543205eaa7a958e6ca14895b1d0/logo%20la%20gran%20casa%20calidad%20alta%20svg.svg"
+                        alt="La Gran Casa"
+                        class="h-24 md:h-32 lg:h-36 object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                </div>
+
+                <!-- Tarjetas de Maestros - Diseño premium -->
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Maestro Manuel -->
+                    <div
+                        class="group bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800/50 rounded-3xl p-8 text-left hover:border-tkd-red/30 transition-all duration-500 hover:shadow-2xl hover:shadow-tkd-red/5">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-tkd-red to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-tkd-red/20 group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-star text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <span class="text-tkd-red text-xs font-bold uppercase tracking-widest">Gran
+                                    Maestro</span>
+                                <h3 class="text-white text-2xl font-bold mt-1">Manuel Velásquez</h3>
+                                <span
+                                    class="inline-block bg-white/10 text-white text-xs font-medium px-4 py-1.5 rounded-full mt-3">9no
+                                    Dan</span>
+                                <p class="text-gray-500 text-sm mt-4 leading-relaxed">Décadas de experiencia formando
+                                    campeones y personas de carácter.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maestro Dax -->
+                    <div
+                        class="group bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800/50 rounded-3xl p-8 text-left hover:border-tkd-red/30 transition-all duration-500 hover:shadow-2xl hover:shadow-tkd-red/5">
+                        <div class="flex items-start gap-5">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-tkd-red to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-tkd-red/20 group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-medal text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <span class="text-tkd-red text-xs font-bold uppercase tracking-widest">Maestro</span>
+                                <h3 class="text-white text-2xl font-bold mt-1">Dax Velásquez</h3>
+                                <span
+                                    class="inline-block bg-white/10 text-white text-xs font-medium px-4 py-1.5 rounded-full mt-3">6to
+                                    Dan</span>
+                                <p class="text-gray-500 text-sm mt-4 leading-relaxed">Formación técnica de élite con
+                                    metodología moderna.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-24 bg-tkd-gray">
+            <div class="max-w-6xl mx-auto px-4">
+                <!-- Header con cápsula LED -->
+                <div class="text-center mb-16">
+                    <div
+                        class="led-glow-badge inline-flex items-center gap-2 border border-tkd-red/30 text-white text-xs font-bold uppercase tracking-widest px-5 py-2.5 rounded-full mb-8 backdrop-blur-sm">
+                        <span class="w-2 h-2 bg-tkd-red rounded-full animate-pulse"></span>
+                        Beneficios del Taekwondo
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-tkd-black mb-4">
+                        Más que un Arte Marcial, <span class="text-tkd-red">un Estilo de Vida</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                        El Taekwondo transforma vidas. Descubre los beneficios que obtendrás desde el primer día.
+                    </p>
+                </div>
+
+                <!-- Beneficios Niños -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-tkd-black mb-8 text-center md:text-left">
+                        <i class="fas fa-child text-tkd-red mr-2"></i>Beneficios en Niños <span
+                            class="text-gray-400 font-normal text-lg">(7 a 12 años)</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <article class="card-benefit reveal-on-scroll">
+                            <div class="icon-circle"><i class="fas fa-user-check"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Disciplina y autocontrol</h4>
+                            <p class="text-gray-600 text-sm">Aprenden a respetar reglas, maestros y compañeros,
+                                desarrollando hábitos positivos.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 100ms;">
+                            <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Concentración y rendimiento</h4>
+                            <p class="text-gray-600 text-sm">El entrenamiento fortalece la atención, la memoria y la
+                                capacidad de seguir instrucciones.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 200ms;">
+                            <div class="icon-circle"><i class="fas fa-star"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Confianza y autoestima</h4>
+                            <p class="text-gray-600 text-sm">Superar retos, avanzar de grado y lograr objetivos aumenta
+                                su seguridad personal.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 300ms;">
+                            <div class="icon-circle"><i class="fas fa-running"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Desarrollo físico integral</h4>
+                            <p class="text-gray-600 text-sm">Mejora coordinación, equilibrio, flexibilidad y fuerza de
+                                forma segura y progresiva.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Beneficios Jóvenes -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-tkd-black mb-8 text-center md:text-left">
+                        <i class="fas fa-fist-raised text-tkd-red mr-2"></i>Beneficios en Jóvenes <span
+                            class="text-gray-400 font-normal text-lg">(13 a 18 años)</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <article class="card-benefit reveal-on-scroll">
+                            <div class="icon-circle"><i class="fas fa-head-side-brain"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Fortaleza mental</h4>
+                            <p class="text-gray-600 text-sm">Canalizan el estrés, la ansiedad y la frustración de manera
+                                positiva.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 100ms;">
+                            <div class="icon-circle"><i class="fas fa-heartbeat"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Condición física</h4>
+                            <p class="text-gray-600 text-sm">Incrementan resistencia, fuerza y agilidad, alejándose del
+                                sedentarismo.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 200ms;">
+                            <div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Autodefensa real</h4>
+                            <p class="text-gray-600 text-sm">Aprenden a protegerse, reaccionar ante situaciones reales y
+                                tomar decisiones bajo presión.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 300ms;">
+                            <div class="icon-circle"><i class="fas fa-crown"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Liderazgo y responsabilidad</h4>
+                            <p class="text-gray-600 text-sm">El sistema de grados fomenta compromiso, constancia y metas
+                                claras.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Beneficios Adultos -->
+                <div>
+                    <h3 class="text-2xl font-bold text-tkd-black mb-8 text-center md:text-left">
+                        <i class="fas fa-user-shield text-tkd-red mr-2"></i>Beneficios en Adultos <span
+                            class="text-gray-400 font-normal text-lg">(18+)</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <article class="card-benefit reveal-on-scroll">
+                            <div class="icon-circle"><i class="fas fa-heart"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Mejora integral de salud</h4>
+                            <p class="text-gray-600 text-sm">Ayuda a reducir estrés, mejorar la movilidad, la postura y
+                                la salud cardiovascular.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 100ms;">
+                            <div class="icon-circle"><i class="fas fa-fist-raised"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Defensa personal efectiva</h4>
+                            <p class="text-gray-600 text-sm">Técnicas prácticas para aumentar la seguridad y la
+                                confianza en el día a día.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 200ms;">
+                            <div class="icon-circle"><i class="fas fa-balance-scale"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Disciplina y enfoque mental</h4>
+                            <p class="text-gray-600 text-sm">Ideal para quienes buscan equilibrio entre cuerpo y mente
+                                después de la rutina laboral.</p>
+                        </article>
+                        <article class="card-benefit reveal-on-scroll" style="transition-delay: 300ms;">
+                            <div class="icon-circle"><i class="fas fa-infinity"></i></div>
+                            <h4 class="text-lg font-bold mb-2">Sin límites de edad</h4>
+                            <p class="text-gray-600 text-sm">Entrenamientos adaptados al nivel y condición de cada
+                                persona.</p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="programas" class="py-24 bg-tkd-black">
+            <div class="max-w-6xl mx-auto px-4">
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <div
+                        class="led-glow-badge inline-flex items-center gap-2 border border-tkd-red/30 text-white text-xs font-bold uppercase tracking-widest px-5 py-2.5 rounded-full mb-8 backdrop-blur-sm">
+                        <span class="w-2 h-2 bg-tkd-red rounded-full animate-pulse"></span>
+                        Programas por Edad
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+                        Clases Diseñadas <span class="text-tkd-red">para Ti</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                        Sin importar tu edad, tenemos un programa adaptado a tus necesidades y objetivos.
+                    </p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Card Niños -->
+                    <article
+                        class="group bg-white rounded-2xl overflow-hidden border-2 border-transparent hover:border-tkd-red/30 transition-all duration-500 hover:shadow-2xl hover:shadow-tkd-red/10">
+                        <!-- Línea roja superior -->
+                        <div class="h-1.5 bg-gradient-to-r from-tkd-red to-red-500"></div>
+
+                        <div class="p-8">
+                            <!-- Icono -->
+                            <div
+                                class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-child text-tkd-red text-2xl"></i>
+                            </div>
+
+                            <!-- Contenido -->
+                            <span class="text-tkd-red text-xs font-bold uppercase tracking-wider">Desde 7 años</span>
+                            <h3 class="text-2xl font-bold text-tkd-black mt-1 mb-4">Niños</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                Formación integral que desarrolla disciplina, respeto y confianza desde temprana edad.
+                                El Taekwondo les enseña a canalizar su energía de forma positiva.
+                            </p>
+
+                            <!-- Keywords de beneficios -->
+                            <ul class="space-y-1 mb-8 text-sm">
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Disciplina</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Concentración</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Confianza</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Coordinación</span></li>
+                            </ul>
+
+                            <!-- CTA Button -->
+                            <a href="https://wa.me/59162404811"
+                                class="flex items-center justify-center gap-2 w-full bg-tkd-red text-white font-bold py-3.5 px-6 rounded-xl hover:bg-red-700 transition-all duration-300 group-hover:scale-105">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card Jóvenes -->
+                    <article
+                        class="group bg-white rounded-2xl overflow-hidden border-2 border-transparent hover:border-tkd-red/30 transition-all duration-500 hover:shadow-2xl hover:shadow-tkd-red/10">
+                        <!-- Línea roja superior -->
+                        <div class="h-1.5 bg-gradient-to-r from-tkd-red to-red-500"></div>
+
+                        <div class="p-8">
+                            <!-- Icono -->
+                            <div
+                                class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-fist-raised text-tkd-red text-2xl"></i>
+                            </div>
+
+                            <!-- Contenido -->
+                            <span class="text-tkd-red text-xs font-bold uppercase tracking-wider">Adolescentes y
+                                universitarios</span>
+                            <h3 class="text-2xl font-bold text-tkd-black mt-1 mb-4">Jóvenes</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                Desarrolla autocontrol, superación personal y una mentalidad ganadora. El Taekwondo te
+                                prepara para los desafíos de la vida.
+                            </p>
+
+                            <!-- Keywords de beneficios -->
+                            <ul class="space-y-1 mb-8 text-sm">
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Control emocional</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Fuerza</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Autodefensa</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Liderazgo</span></li>
+                            </ul>
+
+                            <!-- CTA Button -->
+                            <a href="https://wa.me/59162404811"
+                                class="flex items-center justify-center gap-2 w-full bg-tkd-red text-white font-bold py-3.5 px-6 rounded-xl hover:bg-red-700 transition-all duration-300 group-hover:scale-105">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card Adultos -->
+                    <article
+                        class="group bg-white rounded-2xl overflow-hidden border-2 border-transparent hover:border-tkd-red/30 transition-all duration-500 hover:shadow-2xl hover:shadow-tkd-red/10">
+                        <!-- Línea roja superior -->
+                        <div class="h-1.5 bg-gradient-to-r from-tkd-red to-red-500"></div>
+
+                        <div class="p-8">
+                            <!-- Icono -->
+                            <div
+                                class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-user-shield text-tkd-red text-2xl"></i>
+                            </div>
+
+                            <!-- Contenido -->
+                            <span class="text-tkd-red text-xs font-bold uppercase tracking-wider">Nunca es tarde para
+                                empezar</span>
+                            <h3 class="text-2xl font-bold text-tkd-black mt-1 mb-4">Adultos</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                                Aprende Taekwondo auténtico desde cero. Mejora tu condición física, reduce el estrés y
+                                adquiere habilidades de defensa personal.
+                            </p>
+
+                            <!-- Keywords de beneficios -->
+                            <ul class="space-y-1 mb-8 text-sm">
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Salud</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Seguridad</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Enfoque</span></li>
+                                <li><span class="text-tkd-red font-bold">></span> <span
+                                        class="text-tkd-black font-semibold">Bienestar integral</span></li>
+                            </ul>
+
+                            <!-- CTA Button -->
+                            <a href="https://wa.me/59162404811"
+                                class="flex items-center justify-center gap-2 w-full bg-tkd-red text-white font-bold py-3.5 px-6 rounded-xl hover:bg-red-700 transition-all duration-300 group-hover:scale-105">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-tkd-gray">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h2 class="section-title">Entrena Con Nosotros</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-10">
+                    <div class="video-container reveal-on-scroll">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1268102762009711%2F&show_text=false&width=267&t=0"
+                            scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-container reveal-on-scroll" style="transition-delay: 100ms;">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1769538570393958%2F&show_text=false&width=267&t=0"
+                            scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="bg-tkd-black">
+            <!-- Row 1: Info + Video + Mapa -->
+            <div class="flex flex-col lg:flex-row lg:min-h-[550px]">
+                <!-- Columna Izquierda: Información -->
+                <div
+                    class="w-full lg:w-1/4 bg-tkd-black text-white p-8 lg:p-10 flex flex-col justify-center lg:self-stretch">
+                    <h2 class="text-3xl font-bold mb-6 text-tkd-red">Visítanos</h2>
+                    <address class="not-italic space-y-5">
+                        <div>
+                            <h3 class="text-gray-400 text-sm font-bold uppercase">Dirección</h3>
+                            <p class="text-lg">Cruce de Villa San Antonio<br>Av. Esteban Arce #1872</p>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-400 text-sm font-bold uppercase">Horarios</h3>
+                            <p class="text-base">Consultar por WhatsApp</p>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-400 text-sm font-bold uppercase">Síguenos</h3>
+                            <div class="flex gap-4 mt-2">
+                                <a href="https://www.facebook.com/lagrancasalapaz" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-white hover:text-tkd-red transition-colors duration-300"
+                                    aria-label="Facebook">
+                                    <i class="fab fa-facebook text-2xl"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@lagrancasataekwondo" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-white hover:text-tkd-red transition-colors duration-300"
+                                    aria-label="TikTok">
+                                    <i class="fab fa-tiktok text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </address>
+                </div>
+
+                <!-- Columna Centro: Video + Flecha -->
+                <div
+                    class="w-full lg:w-1/3 bg-zinc-900 p-6 flex flex-col items-center justify-center relative lg:self-stretch">
+                    <h3 class="text-white text-lg font-bold mb-4 text-center">
+                        <i class="fas fa-route text-tkd-red mr-2"></i>¿Cómo Llegar?
+                    </h3>
+                    <!-- Video Container -->
+                    <div
+                        class="w-full max-w-[300px] aspect-[9/16] rounded-xl overflow-hidden border-2 border-tkd-red/30">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F886795667629543%2F&show_text=false&width=267&t=0"
+                            width="100%" height="100%" scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+
+                    <!-- Flecha animada hacia el mapa (horizontal en desktop, vertical en mobile) -->
+                    <div
+                        class="hidden lg:flex items-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10">
+                        <div
+                            class="flex items-center gap-2 bg-tkd-red text-white px-4 py-2 rounded-full shadow-lg animate-pulse">
+                            <span class="text-sm font-bold">Ver en Mapa</span>
+                            <i class="fas fa-arrow-right text-lg arrow-bounce-right"></i>
+                        </div>
+                    </div>
+                    <!-- Flecha para móvil (hacia abajo) -->
+                    <div class="flex lg:hidden items-center justify-center mt-4">
+                        <div
+                            class="flex flex-col items-center gap-1 bg-tkd-red text-white px-4 py-2 rounded-full shadow-lg animate-pulse">
+                            <span class="text-sm font-bold">Ver en Mapa</span>
+                            <i class="fas fa-arrow-down text-lg arrow-bounce-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Google Maps -->
+                <div class="w-full lg:w-5/12 h-[350px] lg:h-auto lg:self-stretch bg-gray-200">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5!2d-68.125!3d-16.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDMwJzAwLjAiUyA2OMKwMDcnMzAuMCJX!5e0!3m2!1ses-419!2sbo!4v1600000000000!5m2!1ses-419!2sbo"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="hero-bg border-t-4 border-tkd-red">
+        <!-- Main Footer Content -->
+        <div class="max-w-6xl mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+
+                <!-- Columna 1: Logo + Descripción -->
+                <div class="space-y-6">
+                    <img src="https://raw.githubusercontent.com/magicdesignefecto-pages/lagrancasataekwondo-lapaz/d8bdeadb98f26543205eaa7a958e6ca14895b1d0/LOGO%20LA%20GRAN%20CASA%20ALTA%20IMAGEN%20SVG.svg"
+                        alt="La Gran Casa Taekwondo" class="h-16">
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Escuela profesional de Taekwondo en La Paz, Bolivia. Disciplina, carácter y formación real para
+                        niños, jóvenes y adultos.
+                    </p>
+                    <a href="https://wa.me/59162404811"
+                        class="inline-flex items-center gap-2 bg-tkd-red hover:bg-red-700 text-white font-bold px-6 py-3 rounded-full transition-all duration-300">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Columna 2: Enlaces -->
+                <div class="md:pl-8">
+                    <h4 class="text-lg font-bold mb-6 text-tkd-black">Enlaces</h4>
+                    <nav class="space-y-3">
+                        <a href="#"
+                            class="block text-gray-600 hover:text-tkd-red transition-colors duration-300">Inicio</a>
+                        <a href="#beneficios"
+                            class="block text-gray-600 hover:text-tkd-red transition-colors duration-300">Beneficios</a>
+                        <a href="#programas"
+                            class="block text-gray-600 hover:text-tkd-red transition-colors duration-300">Programas</a>
+                        <a href="#nosotros"
+                            class="block text-gray-600 hover:text-tkd-red transition-colors duration-300">Nosotros</a>
+                        <a href="#ubicacion"
+                            class="block text-gray-600 hover:text-tkd-red transition-colors duration-300">Ubicación</a>
+                    </nav>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-tkd-black">Contacto</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-tkd-red mt-1"></i>
+                            <p class="text-gray-600 text-sm">
+                                Cruce de Villa San Antonio, Av. Esteban Arce #1872, subsuelo<br>
+                                La Paz, Bolivia
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-tkd-red"></i>
+                            <a href="tel:+59162404811"
+                                class="text-gray-600 hover:text-tkd-red transition-colors duration-300">
+                                +591 62404811
+                            </a>
+                        </div>
+                        <!-- Redes Sociales -->
+                        <div class="flex gap-4 mt-4">
+                            <a href="https://www.facebook.com/lagrancasalapaz" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 bg-gray-200 hover:bg-tkd-red rounded-full flex items-center justify-center transition-all duration-300"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook-f text-gray-700 hover:text-white"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@lagrancasataekwondo" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 bg-gray-200 hover:bg-tkd-red rounded-full flex items-center justify-center transition-all duration-300"
+                                aria-label="TikTok">
+                                <i class="fab fa-tiktok text-gray-700 hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-200">
+            <div class="max-w-6xl mx-auto px-6 py-5 text-center">
+                <p class="text-gray-500 text-sm">
+                    © Diseñado por <a href="https://magicdesignefecto.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-tkd-red hover:underline font-medium">Magic Design Efecto 2026</a> - Agencia de
+                    Marketing Digital - La Paz, Bolivia
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/59162404811" class="float-whatsapp" aria-label="Chat de WhatsApp">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+
+    <script src="main.js" defer></script>
 </body>
+
 </html>
